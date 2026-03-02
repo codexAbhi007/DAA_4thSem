@@ -13,7 +13,7 @@ int knpsckDP(int p[], int w[], int m, int n, int x[])
 
     int i, j;
 
-    // initialisation
+    
     for (i = 0; i <= n; ++i)
         V[i][0] = 0;
     for (j = 0; j <= m; ++j)
@@ -39,7 +39,7 @@ int knpsckDP(int p[], int w[], int m, int n, int x[])
         printf("\n");
     }
 
-    // Backtrack to find selected items
+    // Backtrack
     for (i = 0; i < n; ++i)
         x[i] = 0;
     i = n;
